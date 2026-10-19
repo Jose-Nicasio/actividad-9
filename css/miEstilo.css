@@ -1,0 +1,167 @@
+
+:root {
+    --crema-claro: #FBF8F5;         
+    --crema-suave: #F3EAE1;          
+    --bg-terjeta: #EFE6DC;         
+    --btn: #D6C2B1;       
+    --btn-hover: #C5AF9E; 
+    --negro-marfil: #2A2421;        
+    --ceniza: #7A706A;      
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--crema-claro);
+    color: var(--negro-marfil);
+}
+
+.tracking-wide {
+    letter-spacing: 2px;
+}
+
+
+.navbar-custom {
+    background-color: var(--crema-claro) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.navbar-custom .nav-link {
+    color: var(--negro-marfil) !important;
+    font-size: 0.9rem;
+}
+
+
+#inicio {
+    background-color: var(--crema-suave);
+    background-image: url('../images/fondoo.jpg'); 
+    background-size: cover;
+    background-position: center right; 
+    width: 100%;
+    height: 520px;        
+    max-height: 80vh; 
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.my-title {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    color: var(--negro-marfil);
+    font-weight: 700;
+}
+
+
+.btn-beige {
+    background-color: #F8F3ED !important;
+    color: var(--negro-marfil) !important;
+    border: none !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-beige:hover {
+    background-color: #EFE6DC !important;
+    color: var(--negro-marfil) !important;
+}
+
+
+.btn-outline-beige {
+    background-color: #F8F3ED !important;/*el important es fundamental para darle prioridad 
+    a una propiedad por encima de cualquier regla por ejemplo las reglas que implementa bootstrap*/
+    border: none !important;
+    color: var(--negro-marfil) !important;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-beige:hover {
+    background-color: #EFE6DC !important;
+    color: var(--negro-marfil) !important;
+}
+
+
+.category-card {
+    background-color: var(--bg-terjeta);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+}
+
+.primavera-title {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    color: var(--negro-marfil);
+}
+
+
+.catalog-img-main {
+    object-fit: cover;
+    min-height: 380px;
+}
+
+.catalog-img {
+    height: 250px;
+    object-fit: cover;
+    background-color: var(--bg-terjeta);
+    
+}
+
+.catalog-card {
+    background-color: var(--bg-terjeta);
+    transition: transform 0.3s ease;
+}
+
+.catalog-card:hover {
+    transform: translateY(-4px);
+}
+
+.catalog-card-body {
+    background-color: #E6DAD0;
+}
+
+
+.product-card {
+    background-color: var(--bg-terjeta);
+    border: none;
+}
+
+.product-img-sm {
+    height: 180px;
+    object-fit: cover;
+}
+
+
+@media (min-width: 992px) {
+    .col-lg-2-4 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+
+
+footer {
+    background-color: #1F1B18 !important;
+    color: #E2DAD3;
+}
+
+footer a {
+    color: #E2DAD3;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--btn) !important;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 767px) {
+    #inicio {
+        min-height: 50vh;
+        text-align: center;
+    }
+    .my-title {
+        font-size: 2.2rem;
+    }
+}
